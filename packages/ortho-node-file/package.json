@@ -1,0 +1,39 @@
+{
+	"name": "@andrew8er/ortho-node-file",
+	"version": "0.1.0",
+	"description": "Configuration",
+	"keywords": [],
+	"license": "Apache-2.0",
+	"author": "André Wachter <hello@andrewachter.de>",
+	"type": "module",
+	"main": "./dist/index.js",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"engines": {
+		"node": ">=14.16"
+	},
+	"scripts": {
+		"clean": "del dist",
+		"node.clean": "del node_modules",
+		"build": "tsc --build .",
+		"test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' npx jest",
+		"prepublish": "pnpm run build"
+	},
+	"dependencies": {
+		"@andrew8er/ortho-core": "workspace:^0.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.7.18",
+		"del-cli": "^5.0.0",
+		"typescript": "^4.8.3"
+	},
+	"files": [
+		"dist/*.js",
+		"dist/*.d.ts",
+		"!dist/**/*.test.**"
+	]
+}

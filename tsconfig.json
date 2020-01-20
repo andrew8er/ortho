@@ -1,0 +1,12 @@
+{
+	"references": [
+		{ "path": "examples" },
+		{ "path": "packages/ortho-core" },
+		{ "path": "packages/ortho-format-jsonc" },
+		{ "path": "packages/ortho-node-environment" },
+		{ "path": "packages/ortho-node-file" },
+	],
+	"exclude": [
+		"**/*"
+	]
+}
