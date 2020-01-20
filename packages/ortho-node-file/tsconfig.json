@@ -1,0 +1,16 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"references": [
+		{ "path": "../ortho-core" }
+	],
+	"compilerOptions": {
+		"composite": true,
+		"baseUrl": "src",
+		"outDir": "dist",
+		"rootDir": "src",
+		"tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+}

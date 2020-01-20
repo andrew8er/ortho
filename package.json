@@ -1,0 +1,18 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "tsc --build",
+		"dev": "tsc --build --watch .",
+		"clean": "pnpm run -r --parallel --aggregate-output clean",
+		"node.clean": "pnpm run -r --parallel --aggregate-output node.clean",
+		"test": "pnpm exec vitest --run",
+		"test.dev": "pnpm exec vitest"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@types/node": "^18.7.18",
+		"typescript": "^4.8.3",
+		"vitest": "^0.23.4"
+	},
+	"version": "0.0.0"
+}

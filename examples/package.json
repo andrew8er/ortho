@@ -1,0 +1,27 @@
+{
+	"private": true,
+	"description": "Configuration",
+	"keywords": [],
+	"license": "Apache-2.0",
+	"author": "André Wachter <hello@andrewachter.de>",
+	"type": "module",
+	"engines": {
+		"node": ">=14.16"
+	},
+	"scripts": {
+		"clean": "del dist",
+		"node.clean": "del node_modules",
+		"build": "tsc --build .",
+		"test": ""
+	},
+	"dependencies": {
+		"@andrew8er/ortho-core": "workspace:^0.1.0",
+		"@andrew8er/ortho-node-file": "workspace:^0.1.0",
+		"jsonc": "^2.0.0"
+	},
+	"devDependencies": {
+		"del-cli": "^5.0.0",
+		"typescript": "^4.8.3"
+	},
+	"files": []
+}
