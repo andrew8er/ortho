@@ -1,0 +1,11 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "entryPointStrategy": "packages",
+    "entryPoints": [
+        "packages/ortho-core",
+		"packages/ortho-format-jsonc",
+		"packages/ortho-node-environment",
+		"packages/ortho-node-file",
+    ],
+    "out": "doc"
+}
