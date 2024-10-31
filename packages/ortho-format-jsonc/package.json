@@ -24,15 +24,14 @@
 		"prepublish": "pnpm run build"
 	},
 	"dependencies": {
-		"@andrew8er/ortho-core": "workspace:^0.1.0",
+		"@andrew8er/ortho-core": "workspace:*",
 		"jsonc": "^2.0.0"
 	},
 	"devDependencies": {
-		"@andrew8er/ortho-node-file": "workspace:^0.1.0",
-		"@types/node": "^18.7.18",
-		"del-cli": "^5.0.0",
-		"tools": "workspace:*",
-		"typescript": "^4.8.3"
+		"@andrew8er/ortho-node-file": "workspace:*",
+		"@types/node": "catalog:",
+		"del-cli": "catalog:",
+		"typescript": "catalog:"
 	},
 	"files": [
 		"dist/**/*.js",

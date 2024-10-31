@@ -24,12 +24,12 @@
 		"prepublish": "pnpm run build"
 	},
 	"dependencies": {
-		"@andrew8er/ortho-core": "workspace:^0.1.0"
+		"@andrew8er/ortho-core": "workspace:*"
 	},
 	"devDependencies": {
-		"@types/node": "^18.7.18",
-		"del-cli": "^5.0.0",
-		"typescript": "^4.8.3"
+		"@types/node": "catalog:",
+		"del-cli": "catalog:",
+		"typescript": "catalog:"
 	},
 	"files": [
 		"dist/*.js",

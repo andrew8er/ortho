@@ -14,5 +14,7 @@
 		"strict": true,
 		"target": "es2018",
 		"useDefineForClassFields": true,
+		// https://github.com/vitest-dev/vitest/issues/4688#issuecomment-2043191486
+		"skipLibCheck": true,
 	},
 }
